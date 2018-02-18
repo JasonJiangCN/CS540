@@ -31,47 +31,116 @@ public class successor {
             this.Content[1] = b;
             this.Content[2] = c;
         }
- 
+
         public void printContent()
         {
             System.out.println(this.Content[0] + " " + this.Content[1] + " " + this.Content[2]);
         }
- 
+
         public ArrayList<JugState> getNextStates(){
             ArrayList<JugState> successors = new ArrayList<>();
-
-            // TODO add all successors to the list
-
+            for (int i = 0; i < 3; i++){
+                if (this.Content[i] != 0){
+                    int tempStore = this.Content[i];
+                    this.Content[i] = 0;
+                    successors.add(new JugState(this.Capacity[0],
+                                this.Capacity[1],
+                                this.Capacity[2],
+                                this.Content[0],
+                                this.Content[1],
+                                this.Content[2]));
+                    this.Content[i] = tempStore;
+                }
+                if (this.Content[i] < this.Capacity[i]) {
+                    int tempStore = this.Content[i];
+                    this.Content[i] = this.Capacity[i];
+                    successors.add(new JugState(this.Capacity[0],
+                                this.Capacity[1],
+                                this.Capacity[2],
+                                this.Content[0],
+                                this.Content[1],
+                                this.Content[2]));
+                    this.Content[i] = tempStore;
+                    int j,k;
+                    if (i == 0) {
+                        j = 1;
+                        k = 2;
+                    } else if (i == 1){
+                        j = 2;
+                        k = 1;
+                    } else {
+                        j = 0;
+                        k = 1;
+                    }
+                    if (this.Content[j] != 0){
+                        int tempStorej = this.Content[j];
+                        if (this.Content[j] <= this.Capacity[i] - this.Content[i]){
+                            this.Content[i] += this.Content[j];
+                            this.Content[j] -= tempStore;
+                        } else {
+                            this.Content[i] = this.Capacity[i];
+                            this.Content[j] -= (this.Capacity[i] - this.Content[i]);
+                        }
+                        successors.add(new JugState(this.Capacity[0],
+                                    this.Capacity[1],
+                                    this.Capacity[2],
+                                    this.Content[0],
+                                    this.Content[1],
+                                    this.Content[2]));
+                        this.Content[i] = tempStore;
+                        this.Content[j] = tempStorej;
+                    }
+                    if (this.Content[k] != 0){
+                        int tempStorek = this.Content[k];
+                        if (this.Content[k] <= this.Capacity[i] - this.Content[i]){
+                            this.Content[i] += this.Content[k];
+                            this.Content[k] -= tempStore;
+                        } else {
+                            this.Content[i] = this.Capacity[i];
+                            this.Content[k] -= (this.Capacity[i] - this.Content[i]);
+                        }
+                        successors.add(new JugState(this.Capacity[0],
+                                    this.Capacity[1],
+                                    this.Capacity[2],
+                                    this.Content[0],
+                                    this.Content[1],
+                                    this.Content[2]));
+                        this.Content[i] = tempStore;
+                        this.Content[k] = tempStorek;
+                    }
+                }
+            }
             return successors;
         }
-    }
+    
+    
+        public static void main(String[] args) {
+            if( args.length != 6 )
+            {
+                System.out.println("Usage: java successor [A] [B] [C] [a] [b] [c]");
+                return;
+            }
 
-    public static void main(String[] args) {
-        if( args.length != 6 )
-        {
-            System.out.println("Usage: java successor [A] [B] [C] [a] [b] [c]");
+            // parse command line arguments
+            JugState a = new JugState();
+            a.Capacity[0] = Integer.parseInt(args[0]);
+            a.Capacity[1] = Integer.parseInt(args[1]);
+            a.Capacity[2] = Integer.parseInt(args[2]);
+            a.Content[0] = Integer.parseInt(args[3]);
+            a.Content[1] = Integer.parseInt(args[4]);
+            a.Content[2] = Integer.parseInt(args[5]);
+
+            // Implement this function
+            ArrayList<JugState> asist = a.getNextStates();
+
+            // Print out generated successors
+            for(int i=0;i< asist.size(); i++)
+            {
+                asist.get(i).printContent();
+            }
+
             return;
         }
-
-        // parse command line arguments
-        JugState a = new JugState();
-        a.Capacity[0] = Integer.parseInt(args[0]);
-        a.Capacity[1] = Integer.parseInt(args[1]);
-        a.Capacity[2] = Integer.parseInt(args[2]);
-        a.Content[0] = Integer.parseInt(args[3]);
-        a.Content[1] = Integer.parseInt(args[4]);
-        a.Content[2] = Integer.parseInt(args[5]);
-
-        // Implement this function
-        ArrayList<JugState> asist = a.getNextStates();
-
-        // Print out generated successors
-        for(int i=0;i< asist.size(); i++)
-        {
-            asist.get(i).printContent();
-        }
-
-        return;
     }
 }
 
