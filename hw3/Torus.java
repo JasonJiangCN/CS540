@@ -141,7 +141,8 @@ public class Torus {
             int maxStackSize = Integer.MIN_VALUE;
 
             // needed for Part E
-            while (true) {				
+            while (true) {	
+                prefix.clear();            
                 stack.push(init);
                 //for all situations
                 while (!stack.isEmpty()){
@@ -153,16 +154,15 @@ public class Torus {
                     }
 
                     prefix.add(curr);
+                    goalChecked++;
                     if (curr.isGoalState())
                         break;
-                    goalChecked++;
 
-                    if (option != 4)
+                    if (option == 2 || option == 3)    
                         curr.printState(option);
-                    else {
+                    if (option == 4)
                         if (curr.depth >= cutoff)
                             break; 
-                    }
 
                     if (curr.depth < cutoff) {
                         State[] succ = curr.getSuccessors();
@@ -176,26 +176,19 @@ public class Torus {
                                 stack.push(succ[i]);
                             isExist = false;
                         }
-
-                    } else {
-                        
                     }
-                }
 
+                }
+                if (option == 4){
+                    for (int i = 0; i < prefix.size(); i++) {
+                        System.out.println(prefix.get(i).getBoard());
+                    }
+
+                }
                 if (option != 5)
                     break;
 
-                //TO DO: perform the necessary steps to start a new iteration
-                //       for Part E
-
             }
-            if (option == 4){
-                for (int i = 0; i < prefix.size(); i++) {
-                    System.out.println(prefix.get(i).getBoard());
-                }
-
-            }
-
         }
     }
 }
