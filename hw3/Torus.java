@@ -13,6 +13,7 @@ class State {
         this.board[empty] = this.board[tail];
         this.board[tail] = 0;
     }
+    
     private int compareStateInNature(State target, int i){
         if (this.board[i] < target.board[i])
             return 1;
@@ -23,6 +24,8 @@ class State {
         else
             return compareStateInNature(target, i+1);
     }
+    
+
     public State[] getSuccessors() {
         State[] successors = new State[4];
         // TO DO: get all four successors and return them in sorted order
@@ -114,7 +117,6 @@ class State {
 }
 
 public class Torus {
-
     public static void main(String args[]) {
         if (args.length < 10) {
             System.out.println("Invalid Input");
@@ -139,7 +141,7 @@ public class Torus {
             List<State> prefix = new ArrayList<>();
             int goalChecked = 0;
             int maxStackSize = Integer.MIN_VALUE;
-
+            boolean isFound = false;
             // needed for Part E
             while (true) {	
                 prefix.clear();            
@@ -150,14 +152,14 @@ public class Torus {
                     State curr = stack.pop();
                     if (curr.parentPt != null) {
                         int parent = prefix.indexOf(curr.parentPt);
-                        prefix = prefix.subList(0, parent + 1);
+                        prefix = new ArrayList<>(prefix.subList(0, parent + 1));
                     }
-
                     prefix.add(curr);
                     goalChecked++;
-                    if (curr.isGoalState())
+                    if (curr.isGoalState()){
+                        isFound = true;
                         break;
-
+                    }
                     if (option == 2 || option == 3)    
                         curr.printState(option);
                     if (option == 4)
@@ -178,6 +180,9 @@ public class Torus {
                         }
                     }
 
+                    if(maxStackSize < stack.size())
+                        maxStackSize = stack.size();
+
                 }
                 if (option == 4){
                     for (int i = 0; i < prefix.size(); i++) {
@@ -187,6 +192,17 @@ public class Torus {
                 }
                 if (option != 5)
                     break;
+
+                if(isFound){
+                    for(int i = 0; i < prefix.size(); i++){
+                        prefix.get(i).printState(2);
+                    }
+                    System.out.println("Goal-check " + goalChecked);
+                    System.out.println("Max-stack-size " + maxStackSize);
+                    break;
+                }else{
+                    cutoff++;
+                }
 
             }
         }
