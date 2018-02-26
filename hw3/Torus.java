@@ -30,14 +30,16 @@ class State {
         int emptyIndex = -1;
         for (int i = 0; i < 4; i++){
             successors[i] = new State(this.board);
-            successors[i].depth = this.depth + 1;
-            successors[i].parentPt.depth = this.depth;
-            successors[i].parentPt.parentPt = this.parentPt;
-            if (this.board[i] == 0){
-                emptyIndex = i;
-            }
+            //successors[i].depth = this.depth + 1;
+            //successors[i].parentPt.depth = this.depth;
+            //successors[i].parentPt.parentPt = this.parentPt;
+            
         }
-        
+        for (int i = 0; i < 9; i++){
+            if (this.board[i] == 0)
+                emptyIndex = i;
+        }
+        //System.out.println(emptyIndex);
         //move the right to the empty
         if ((emptyIndex+1) % 3 != 0)
             successors[0].slideTile(emptyIndex, emptyIndex + 1);
@@ -59,20 +61,21 @@ class State {
         else
             successors[3].slideTile(emptyIndex, emptyIndex + 6);
 
-        for (int i = 0; i < 3; i++){
-            State curr = successors[i];
-            if (successors[i].compareStateInNature(successors[i+1], 0) == -1){
-                successors[i] = successors[i+1];
-                successors[i+1] = curr;
+        for (int j = 3; j > 0; j--)
+            for (int i = 0; i < j; i++) {
+                State curr = successors[i];
+                if (successors[i].compareStateInNature(successors[i+1], 0) == -1){
+                    successors[i] = successors[i+1];
+                    successors[i+1] = curr;
+                }
             }
-        }
 
         return successors;
     }
 
     public void printState(int option) {
         if (option == 3){
-        
+
         } else {
             System.out.println(this.getBoard());
         }
