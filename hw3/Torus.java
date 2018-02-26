@@ -4,7 +4,6 @@ class State {
     int[] board;
     State parentPt;
     int depth;
-
     public State(int[] arr) {
         this.board = Arrays.copyOf(arr, arr.length);
         this.parentPt = null;
@@ -32,7 +31,7 @@ class State {
             successors[i] = new State(this.board);
             successors[i].depth = this.depth + 1;
             successors[i].parentPt = this;
-        
+
         }
         for (int i = 0; i < 9; i++){
             if (this.board[i] == 0)
@@ -74,6 +73,14 @@ class State {
 
     public void printState(int option) {
         if (option == 3){
+            System.out.print(this.getBoard());
+            if (this.parentPt == null) {
+                int[] nullArr = {0,0,0,0,0,0,0,0,0};
+                State nullState = new State(nullArr);
+                System.out.println(" parent " + nullState.getBoard());
+            } else {
+                System.out.println(" parent " + this.parentPt.getBoard());
+            }
 
         } else {
             System.out.println(this.getBoard());
@@ -136,8 +143,43 @@ public class Torus {
             // needed for Part E
             while (true) {				
                 stack.push(init);
-                while (!stack.isEmpty() && stack.peek().depth <= cutoff) {
-                    
+                //for all situations
+                while (!stack.isEmpty()){
+                    //pop a state out
+                    State curr = stack.pop();
+                    if (curr.parentPt != null) {
+                        int parent = prefix.indexOf(curr.parentPt);
+                        prefix = prefix.subList(0, parent + 1);
+                    }
+
+                    prefix.add(curr);
+                    if (curr.isGoalState())
+                        break;
+                    goalChecked++;
+
+                    if (option != 4)
+                        curr.printState(option);
+                    else {
+                        if (curr.depth >= cutoff)
+                            break; 
+                    }
+
+                    if (curr.depth < cutoff) {
+                        State[] succ = curr.getSuccessors();
+                        boolean isExist = false;
+                        for (int i = 0; i < succ.length; i++){
+                            for (int j = 0; j < prefix.size(); j++){
+                                if (succ[i].equals(prefix.get(j)))
+                                    isExist = true;
+                            }
+                            if (!isExist)
+                                stack.push(succ[i]);
+                            isExist = false;
+                        }
+
+                    } else {
+                        
+                    }
                 }
 
                 if (option != 5)
@@ -147,6 +189,13 @@ public class Torus {
                 //       for Part E
 
             }
+            if (option == 4){
+                for (int i = 0; i < prefix.size(); i++) {
+                    System.out.println(prefix.get(i).getBoard());
+                }
+
+            }
+
         }
     }
 }
