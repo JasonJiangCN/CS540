@@ -30,10 +30,9 @@ class State {
         int emptyIndex = -1;
         for (int i = 0; i < 4; i++){
             successors[i] = new State(this.board);
-            //successors[i].depth = this.depth + 1;
-            //successors[i].parentPt.depth = this.depth;
-            //successors[i].parentPt.parentPt = this.parentPt;
-            
+            successors[i].depth = this.depth + 1;
+            successors[i].parentPt = this;
+        
         }
         for (int i = 0; i < 9; i++){
             if (this.board[i] == 0)
@@ -137,9 +136,8 @@ public class Torus {
             // needed for Part E
             while (true) {				
                 stack.push(init);
-                while (!stack.isEmpty()) {
-                    //TO DO: perform iterative deepening; implement prefix list
-
+                while (!stack.isEmpty() && stack.peek().depth <= cutoff) {
+                    
                 }
 
                 if (option != 5)
