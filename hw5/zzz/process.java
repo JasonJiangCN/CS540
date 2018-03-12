@@ -14,11 +14,11 @@ public class process {
 		for(int i = 1; i <364; i++) {
 			
 			if(i < 10)
-				filename = "00" + i + ".txt";
+				filename = "../docs/00" + i + ".txt";
 			else if(i < 100)
-				filename = "0" + i + ".txt";
+				filename = "../docs/0" + i + ".txt";
 			else if(i < 100)
-				filename = i + ".txt";
+				filename = "../docs/" + i + ".txt";
 			File file = new File(filename);
 			Scanner scnr = new Scanner(file);
 			while(scnr.hasNext()){
