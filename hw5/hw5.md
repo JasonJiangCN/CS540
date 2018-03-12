@@ -46,7 +46,7 @@ So the overall probability is .5 + .25 = .75
 
 ### 6
 
-![2018-03-11 01.03.08](/Users/Jason/Desktop/2018-03-11 01.03.08.jpg)
+![telegram-cloud-file-1-806123229-57070-5540527014816863065](/Users/Jason/Library/Group Containers/6N38VWS5BX.ru.keepcoder.Telegram/account-14985357259618808439/postbox/media/telegram-cloud-file-1-806123229-57070-5540527014816863065.jpg)
 
 ### 7
 
@@ -72,3 +72,75 @@ I want to use C to implement this method. I'll use getline to get a full line an
 
 ### 2
 
+There are 202998 words in toal, and there are 19718 distinct words.
+
+### 3
+
+
+|frequency  word|
+| -----------------------|
+|11876	the         |
+| 6825	to           |
+| 6171	of           |
+| 5273	and          |
+| 4429	in           |
+| 4009	a            |
+| 3453	that         |
+| 3381	is           |
+| 3231	ai           |
+| 2698	be           |
+| 2065	will         |
+| 2043	it           |
+| 1860	for          |
+| 1708	as           |
+| 1637	are          |
+| 1600	on           |
+| 1554	not          |
+| 1441	this         |
+| 1365	with         |
+| 1229	intelligence |
+
+### 4
+
+| frequency word|
+| --------------------- |
+| 1	abstract         |
+| 1	abrupt           |
+| 1	abroad           |
+| 1	abraham          |
+| 1	aboard           |
+| 1	abnormal         |
+| 1	abide            |
+| 1	abdominal        |
+| 1	abc              |
+| 1	abbasi           |
+| 1	'you             |
+| 1	'transportation' |
+| 1	'top             |
+| 1	'self            |
+| 1	'see'            |
+| 1	's               |
+| 1	'overview'       |
+| 1	'drivers'        |
+| 1	'chauffeurs      |
+| 1	'artificial      |
+
+### 5
+
+![telegram-cloud-file-1-804725156-153485-7202880236658149518](/Users/Jason/Library/Group Containers/6N38VWS5BX.ru.keepcoder.Telegram/account-14985357259618808439/postbox/media/telegram-cloud-file-1-804725156-153485-7202880236658149518.jpg)
+
+### 6
+
+![telegram-cloud-file-1-806119008-56811--4474512679890277314](/Users/Jason/Library/Group Containers/6N38VWS5BX.ru.keepcoder.Telegram/account-14985357259618808439/postbox/media/telegram-cloud-file-1-806119008-56811--4474512679890277314.jpg)
+
+### 7
+
+the first curve has very large value at the very first part, and then sharply goes down when x-axis increase.
+
+the second one will also goes down with the increasing of x-axis. relatively linear.
+
+### 8
+
+The first big issue is the trivival notions will influence the result. For example, "however" and "however, " will be treated as two different words.
+
+The second issue is the capital words. "However" and "however" will be counted as two words.
