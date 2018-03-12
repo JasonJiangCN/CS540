@@ -18,7 +18,7 @@ comes to certain healthcare technologies.
 
 
 
-	Looking at the many implementations of AI in healthcare, the panel argues that AI could 
+Looking at the many implementations of AI in healthcare, the panel argues that AI could 
 
 be used for many different things including automated image interpretation which could cut 
 

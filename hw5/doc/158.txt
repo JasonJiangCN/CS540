@@ -1,4 +1,4 @@
-	I personally feel that the Stanford One Hundred Year Study on Artificial Intelligence as a whole
+I personally feel that the Stanford One Hundred Year Study on Artificial Intelligence as a whole
 
 is, generally speaking, an extremely informative and thoughtful paper. The authors seem very well
 
@@ -12,7 +12,7 @@ metropolitan cities in America will be primarily using self-driving cars by 2030
 
 reasons that I feel this way.
 
-	The first is that I believe it would take too long to replace so many cars with self-driving
+The first is that I believe it would take too long to replace so many cars with self-driving
 
 alternatives. Take, as an analagous example, the concept of converting to renewable energy sources from
 
@@ -32,7 +32,7 @@ infrastructural impact would likewise be massive, to the point where I find full
 
 cars by 2030 to be a grossly optomistic estimate.  
 
-	Besides the logistical hinderances, I also feel that there are many people who would simply rather
+Besides the logistical hinderances, I also feel that there are many people who would simply rather
 
 continue driving their car manually. The Study broaches the matter of public trust in A.I., and I
 
@@ -48,7 +48,7 @@ where I believe that many people will refuse to switch simply because "that's ju
 
 supposed to be."
 
-	Essentially what I'm trying to say is that it's not a matter of whether or not the technology has 
+Essentially what I'm trying to say is that it's not a matter of whether or not the technology has 
 
 sufficiently matured, so much as it is unreasonable to expect society to change in such a drastic way in 
 

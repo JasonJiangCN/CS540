@@ -36,6 +36,8 @@ int main(int argc, char *argv[]) {
 
         char ch;
         while((ch = fgetc(fp)) != EOF && ch != '\0') {
+            if (ch == '\t')
+                continue;
             if (ch == '\r')
                 fputc('\n', newFile);
             fputc(ch, newFile);

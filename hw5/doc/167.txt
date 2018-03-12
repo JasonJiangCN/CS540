@@ -1,4 +1,4 @@
-            															Sreyas Krishna Natarajan					
+            Sreyas Krishna Natarajan
 
 The field of Artificial Intelligence(AI) has been pushing forward the frontier of machine intelligence ever since the beginning. It does not deliver a life-changing product right off the bat. Most inventions, like a calculator, have suffered the fate of becoming commonplace over time and have stopped being considered “intelligent”. Even the definition of “intelligence” continued to change over time. With human intelligence as a measure, even an “intelligent” program such as the Deep Blue program that beat Garry Kasparov, a famous chess player was portrayed as merely using “brute force methods”. Thus, the multi-dimensional spectrum that the study panel proposes to evaluate instances of intelligence undergoes continuous change with time. The factors defining this spectrum, “scale, speed, degree of autonomy and generality” as stated by the study will continue to break new boundaries.
 

@@ -4,7 +4,7 @@
 
             Another aspect of the paper that I challenge is the implementation of artificial intelligence in healthcare by 2030. I can see AI being implemented in computer systems to be used as record keeper and start to analyze different areas to uncover symptoms and diseases, but I challenge the fact that AI can’t replace actual health care professionals. By 2030 I see a partnership between artificial intelligence and the health care professionals. Doctors and patients will always have the question what happens if the machine and software fails during a procedure or misdiagnoses something. I think that overtime artificial intelligence will have to learn every situation, but programming every situation can’t happen. I think there will come a time where a system might be able to think on its own like a human and problem solve different situations, but in the next thirteen years I don’t see machines taking over every aspect of the health care system. Over the years there have been many improvements in the healthcare field from artificial intelligence, but there is still need for improvement before it is fully implemented in our health care system. 
 
-	Artificial intelligence can help many different areas of our society, and the upside potential is infinite. For now, and in the near future there needs to be many improvements to fully understand what artificial intelligence has to offer.
+Artificial intelligence can help many different areas of our society, and the upside potential is infinite. For now, and in the near future there needs to be many improvements to fully understand what artificial intelligence has to offer.
 
 
 

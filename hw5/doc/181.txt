@@ -1,10 +1,10 @@
-	This review challenges the articles claims that advancement in AI will reduce interpersonal 
+This review challenges the articles claims that advancement in AI will reduce interpersonal 
 
 interactions, that AI cannot displace active human teachers in education, that in the field of health 
 
 care people and machine will collaborate, and that the current method AI synthesis can be void of bias.
 
-	The study panel claimed that the next generation is increasingly spending more time on their 
+The study panel claimed that the next generation is increasingly spending more time on their 
 
 devices and are excluding themselves from social interaction. That is only partially correct, and it is 
 
@@ -20,7 +20,7 @@ with others while entertainment is used to share with others of similar interest
 
 interaction may decrease but the amount of time associating with people more like oneself has increased. 
 
-	The second challenge is to the statement that human teacher will always be part of the education 
+The second challenge is to the statement that human teacher will always be part of the education 
 
 system. The current education system places too much reliance on the abilities of the teacher to be able 
 
@@ -38,7 +38,7 @@ inefficiency and the students will be the ones affected. In effect, it would be 
 
 integrate AI into the education system as the main tool for teaching.
 
-	Similarly, to the last challenge, this one states that in the field of health care physicians 
+Similarly, to the last challenge, this one states that in the field of health care physicians 
 
 will collaborate with machines. In simplistic perspective, machines are far more precise than a human can 
 
@@ -50,7 +50,7 @@ availability of said AI after development, there is no reason to maintain physic
 
 rate. 
 
-	The last challenge is the overall assumption that AI will be fundamentally logical and objective 
+The last challenge is the overall assumption that AI will be fundamentally logical and objective 
 
 in situations where a human would. Much of the current AI training relies on statistics and sample size, 
 
@@ -60,7 +60,7 @@ introduce bias from the developer or even the distributor. By developing AI usin
 
 introducing bias to the system. 
 
-	Since most of the article was describing the state of AI in 2030, their claims would stand but 
+Since most of the article was describing the state of AI in 2030, their claims would stand but 
 
 their basis of AI would be under question. With the current AI technology, considering of advancements in 
 

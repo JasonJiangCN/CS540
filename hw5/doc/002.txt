@@ -1,4 +1,4 @@
-	Underneath the topic of Employment and Workplace from Section II of Stanford’s 100 Year Study on Artificial Intelligence (AI), it is asserted that 
+Underneath the topic of Employment and Workplace from Section II of Stanford’s 100 Year Study on Artificial Intelligence (AI), it is asserted that 
 
 AI would have a profound effect on human employment. Notably, it claims that by replacing tasks and creating new jobs, AI would eventually reduce human 
 
@@ -12,13 +12,13 @@ addition to a guaranteed income being a viable solution, solely implementing a s
 
 that may come with the issue.
 
-	The report states that as AI becomes increasingly prevalent in labor, the economical value of labor for most people may not be enough to sustain 
+The report states that as AI becomes increasingly prevalent in labor, the economical value of labor for most people may not be enough to sustain 
 
 an acceptable standard of living. To protect people from such economic shifts, the report suggests evolving the social safety net to ensure higher quality 
 
 social services for everyone in the long term, such as better healthcare, education, or guaranteed incomes.
 
-	The report suggests that with AI taking some of the human-operated jobs, newer occupations would open – though the form of such new openings remains 
+The report suggests that with AI taking some of the human-operated jobs, newer occupations would open – though the form of such new openings remains 
 
 unclear. However, as AI has been, and is being, developed to a point where it becomes the standard for labor, it is not unreasonable to assume that AI would 
 
@@ -30,7 +30,7 @@ guaranteed incomes for all populations, and encourage people to instead pursue t
 
 is readily available to most, if not all, of the human population, and that AI is near the point where they can readily substitute human employees.
 
-	Even when just assuming AI progresses as far as labor, increasing healthcare or education would not necessarily provide jobs for the workers who lose 
+Even when just assuming AI progresses as far as labor, increasing healthcare or education would not necessarily provide jobs for the workers who lose 
 
 their jobs, but rather as a preventive measure for future employment. Considering that their skills lied in physical work, it would be fair to claim that such 
 
@@ -46,7 +46,7 @@ reach a level of cost and resource consumption that allows for equal and ready c
 
 option in developing areas that have not yet implemented technology in their infrastructure.
 
-	In short, in addition to implementing a socially-minded solution, it would also be beneficial to also consider the solution from an economic perspective 
+In short, in addition to implementing a socially-minded solution, it would also be beneficial to also consider the solution from an economic perspective 
 
 as well as the problems that would result from the issue.
 

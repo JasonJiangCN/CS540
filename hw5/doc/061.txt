@@ -1,4 +1,4 @@
-	Stanford One Hundred Year Study on Artificial Intelligence mostly introduces Artificial Intelligence 
+Stanford One Hundred Year Study on Artificial Intelligence mostly introduces Artificial Intelligence 
 
 from computer scientists’ perspective and describes the authors’ idea about how Artificial Intelligence may 
 
@@ -6,7 +6,7 @@ develop in the future 15 years. However, there are two aspects that I find hard 
 
 of AI being biased, and who is going to be responsible if AI breaks the law.
 
-	In the report, the authors write about the possibility of AIs having biases and mentions three factors. Data 
+In the report, the authors write about the possibility of AIs having biases and mentions three factors. Data 
 
 AI uses to make the decisions, AI’s designer, and users. The first one is understandable since anyone could have biases,
 
@@ -32,7 +32,7 @@ users or designers. And if that technical challenge is solved, then at least fro
 
 do not have to warry about biases anymore.
 
-	The question about who is going to be responsible for the possible illegal behavior of AI is a more complicated problem 
+The question about who is going to be responsible for the possible illegal behavior of AI is a more complicated problem 
 
 than the authors mentioned. For start, when designing the AI, there must be regulations that prevent AI from breaking the 
 
@@ -54,7 +54,7 @@ kind of situations where AI do break the laws happened, it’s not hard to find wh
 
 a machine should already been recorded. So that should not be something stand in the way of AI’s development.
 
-	That's the two aspects I have disagreement with. But mostly I have the same believe as the authors have, that AI is going
+That's the two aspects I have disagreement with. But mostly I have the same believe as the authors have, that AI is going
 
 to develop real fast in the future and eventually be an important part of society.
 

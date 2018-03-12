@@ -1,4 +1,4 @@
-	Over the past twenty years, health records have moved from paper to Electronic Health Records 
+Over the past twenty years, health records have moved from paper to Electronic Health Records 
 
 (EHRs).  If a patient suffers a medical emergency away from home, the hospital they are taken to can 
 
@@ -20,7 +20,7 @@ annoying than the thick folders of patient data that were passed around before E
 
 are the backbone of nearly every healthcare benefit they predict AI will provide in the next fifteen years.
 
-	The paper predicts advancements from “AI’s ability to mine outcomes from millions of patient 
+The paper predicts advancements from “AI’s ability to mine outcomes from millions of patient 
 
 clinical records”.  Well, there would be almost nothing to mine if it were not for EHRs.  EHRs collect all of 
 
@@ -32,7 +32,7 @@ data.  The predictive models being built to prevent future water contaminations 
 
 crises are likely heavily reliant on EHR data.
 
-	Next, the paper foresees a breakthrough in healthcare image recognition by AI, specifically for 
+Next, the paper foresees a breakthrough in healthcare image recognition by AI, specifically for 
 
 performing diagnoses. While the technology to perform a diagnosis from an image is not from EHRs, 
 
@@ -52,7 +52,7 @@ outside of a large organization.  EHRs have undoubtedly made a large impact in h
 
 recognition.
 
-	Finally, the paper mentions the benefit of mobile applications, from “a new generation of tech 
+Finally, the paper mentions the benefit of mobile applications, from “a new generation of tech 
 
 savvy clinicians” utilizing specialized mobile applications to the population as a whole employing mobile 
 
@@ -66,7 +66,7 @@ population are likely either directly using an EHR application or using an appli
 
 of an EHR database. EHRs are a critical part of the healthcare benefits from mobile applications.
 
-	While some criticism of the user interface of EHRs is fair, the paper ignores the large benefits 
+While some criticism of the user interface of EHRs is fair, the paper ignores the large benefits 
 
 that the systems currently provide and the fundamental role that EHR data will provide in the 
 

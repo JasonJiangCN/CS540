@@ -1,4 +1,4 @@
-	Research in Artificial Intelligence is accelerating faster than ever, opening new domains for AI to 
+Research in Artificial Intelligence is accelerating faster than ever, opening new domains for AI to 
 
 interact. Advances in machine learning and neural networks has expanded problem sets and created 
 
@@ -18,7 +18,7 @@ addressing various problems posed by the development of Artificial Intelligence,
 
 optimistic at best and reflect the theoretical limits of AI.
 
-	The report in question reads more like George Orwell than a real world evaluation. Flying cars 
+The report in question reads more like George Orwell than a real world evaluation. Flying cars 
 
 are briefly mentioned on page 7, preceding a comparison between personalized robots and the 
 
@@ -28,7 +28,7 @@ but history has shown the optimism of such claims. Undoubtedly, the experts on t
 
 understanding of Artificial Intelligence beyond my own, but may be blind to the impact of their claims.
 
-	For instance, the study panel defines health care as domain for AI growth. If say, a device is 
+For instance, the study panel defines health care as domain for AI growth. If say, a device is 
 
 invented to prescribe and administer medication autonomously, who profits from such a device? Some 
 
@@ -48,7 +48,7 @@ party have to serve the populous when considering the adoption of the device? Th
 
 severely lacking in the field thought to produce such things in as little as 15 years.
 
-	The Study Panel does create a few guidelines to aid the development of AI, but in 
+The Study Panel does create a few guidelines to aid the development of AI, but in 
 
 implementation are unfeasible. In one instance, they posit that government officials on all levels have an 
 
@@ -62,7 +62,7 @@ answer questions in such broad domains as transportation, personal robots, healt
 
 public safety before they can be conceived?
 
-	We cannot presume to know the world in 15 years and what technology will take hold. We can, 
+We cannot presume to know the world in 15 years and what technology will take hold. We can, 
 
 however, reformulate our plan to develop Artificial Intelligence. Our society must develop specific laws 
 

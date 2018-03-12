@@ -1,4 +1,4 @@
-	The arguments and predictions put forth by the Study Panel concerning the 
+The arguments and predictions put forth by the Study Panel concerning the 
 
 future of AI in some selected sectors are mostly well reasoned, given what happened in the 
 
@@ -8,7 +8,7 @@ flying vehicles play in our future and the extent of social impacts of AI in tra
 
 
 
-	The Panel is correct in predicting that most of the cars will have self-driving capability. 
+The Panel is correct in predicting that most of the cars will have self-driving capability. 
 
 Every major auto manufacturer has either already announced future products which can self-drive 
 
@@ -36,7 +36,7 @@ progress in collaborative systems as there is in self-driving technology.
 
 
 
-	Further, I disagree with the Panel’s prediction that future transportation in near term will 
+Further, I disagree with the Panel’s prediction that future transportation in near term will 
 
 include flying vehicles. I believe that the likelihood of flying cars as a mode of transportation in 
 
@@ -70,7 +70,7 @@ waiting for the delivery, instead of being fatal to everyone in the city.
 
  
 
-	In conclusion, infrastructure limitations and cultural factors will play a role in adoption, 
+In conclusion, infrastructure limitations and cultural factors will play a role in adoption, 
 
 or at least in its pace, of few technologies of AI in transportation.
 
@@ -78,5 +78,5 @@ or at least in its pace, of few technologies of AI in transportation.
 
 
 
-	
+
 

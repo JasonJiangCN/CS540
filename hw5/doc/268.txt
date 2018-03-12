@@ -1,6 +1,6 @@
 Challenge to the 100 Year Study
 
-	The 100 year study incorrectly assesses the current state of AI in education and also the
+The 100 year study incorrectly assesses the current state of AI in education and also the
 
 future prospects AI has in the realm of learning on upper education levels. While the study is quite 
 
@@ -8,7 +8,7 @@ bullish on both the current impact and an increasing role in the future, the rea
 
 its current form has not helped, but rather has impeded learning on an advanced level.
 
-	As any college student who has taken an online class knows, AI encourages cheating and constant 
+As any college student who has taken an online class knows, AI encourages cheating and constant 
 
 google searching, while detracting from any analytical learning and deep thinking. The crux of the 
 
@@ -40,7 +40,7 @@ simply too complex and diverse for a video lecture to cover or learn from. It is
 
 education that AI is no real match for pencil, paper, and physical in classroom lecturing. 
 
-	The challenges section on education makes very little sense to me. After profusely praising how much AI
+The challenges section on education makes very little sense to me. After profusely praising how much AI
 
 has helped increase the number of students in classrooms and enhancing learning, they excuse its lack of
 
@@ -58,7 +58,7 @@ seems to be missing is that schools are not avoiding AI because of a lack of dat
 
 their experiences it detracts from learning, not enhances it.
 
-	To sum up briefly, while it is impossible to predict with any sense of accuracy what AI’s role in education
+To sum up briefly, while it is impossible to predict with any sense of accuracy what AI’s role in education
 
 will be down the road, it is clear that right now it is more gimmicky than it is helpful. Online classes and
 

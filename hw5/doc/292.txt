@@ -12,5 +12,5 @@ AI’s penetration into healthcare is met with two main obstacles, the social and 
 
 References
 
-Peter S., Rodney B., Erik B., Ryan C., Oren E., Greg H., Julia H., Shivaram K., Ece K., Sarit K., 	Kevin L., David P., William P., AnnaLee S., Julie S., Milind T., Astro T. (2010, August 1). 	Artifical Intelligence and Life In 2030. Retrieved from http://pages.cs.wisc.edu/	~jerryzhu/cs540.html
+Peter S., Rodney B., Erik B., Ryan C., Oren E., Greg H., Julia H., Shivaram K., Ece K., Sarit K., Kevin L., David P., William P., AnnaLee S., Julie S., Milind T., Astro T. (2010, August 1). Artifical Intelligence and Life In 2030. Retrieved from http://pages.cs.wisc.edu/~jerryzhu/cs540.html
 

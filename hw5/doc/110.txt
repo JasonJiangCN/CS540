@@ -1,4 +1,4 @@
-	The Stanford One Hundred Year Study on Artificial Intelligence provides a great groundwork for the understanding of A.I. and 
+The Stanford One Hundred Year Study on Artificial Intelligence provides a great groundwork for the understanding of A.I. and 
 
 the vast amount of benefits that it could potentially provide to our everyday lives. However, there are some points that are overlooked 
 
@@ -6,7 +6,7 @@ in the study or that have unreasonable expectations, namely, in transportation. 
 
 autonomous cars, flying vehicles, and the legal issues that come along with these new forms of transportation.
 
-      	In the Stanford report they reference an article predicting that there will be 10 million autonomous cars on the road by 2020. 
+      In the Stanford report they reference an article predicting that there will be 10 million autonomous cars on the road by 2020. 
 
 I think there will be multiple factors that will make the transition to autonomous cars slower than they think. The first being that it 
 
@@ -20,7 +20,7 @@ the child or swerve off the road and hit a tree, what is it to do? This along wi
 
 for 10 million autonomous cars a challenging one.
 
-	Along with autonomous cars the report also mentions flying vehicles. It doesn’t say a lot about this topic but it does say that 
+Along with autonomous cars the report also mentions flying vehicles. It doesn’t say a lot about this topic but it does say that 
 
 it is reasonable to expect flying vehicles by 2030. Although there may be prototypes out for flying vehicles, this still seems like a 
 
@@ -30,7 +30,7 @@ training to safely fly one would be extremely rigorous and unrealistic. One can 
 
 like this so I don’t really see it in the near future excluding maybe the very upper class citizen.
 
-	The point that I think will be the most difficult for up and coming autonomous vehicles, flying and on land, will be legal 
+The point that I think will be the most difficult for up and coming autonomous vehicles, flying and on land, will be legal 
 
 issues. In the report it touches on the subject of liability, but it doesn’t find a real solution. Who will be the one held accountable 
 
@@ -44,9 +44,9 @@ liability to fall on the victim. For obvious reasons this would be a tough polic
 
 the most logical way to go.
 
-	Although a future with self-driving cars and flying vehicles is one we all might dream of, there are still many obstacles that 
+Although a future with self-driving cars and flying vehicles is one we all might dream of, there are still many obstacles that 
 
 lie ahead before this may become a reality.
 
-	
+
 

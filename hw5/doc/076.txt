@@ -1,4 +1,4 @@
-	Authors and fanatics of Science Fiction dreamt about autonomous cars as early as the 1930’s. In the year 2017, we’re well on our way to that reality. 
+Authors and fanatics of Science Fiction dreamt about autonomous cars as early as the 1930’s. In the year 2017, we’re well on our way to that reality. 
 
 As the Stanford One Hundred Year Study on Artificial Intelligence claims, by the year 2030, autonomous cars could be commonplace in the average North American city. 
 
@@ -8,7 +8,7 @@ The report makes this claim yet spends little time talking about factors other t
 
 
 
-	According to IHS Automotive in 2014, the average lifespan of a car is 11.4 years. If a person bought a car in 2017, that person will probably still drive that car
+According to IHS Automotive in 2014, the average lifespan of a car is 11.4 years. If a person bought a car in 2017, that person will probably still drive that car
 
  in 2028 or longer as cars improve. Therefore, it’s likely they would drive their car still in 2030. Currently, no completely autonomous cars are commercially available and 
 
@@ -18,9 +18,9 @@ the road overnight. The average lifespan of cars proves that most people who hav
 
 technology won’t prevent these cars getting on the road; the longevity of a cars lifespan will.  
 
-		
 
-	Another factor contributing to the prolonged timeline of autonomous cars is the availability of them. Currently, the cheapest Tesla semi-autonomous car is $35,000, 
+
+Another factor contributing to the prolonged timeline of autonomous cars is the availability of them. Currently, the cheapest Tesla semi-autonomous car is $35,000, 
 
 which have just recently gone into production. The top ten most popular sedans on the market today are all under $30,000, putting Tesla’s car out of the price range of the 
 
@@ -28,9 +28,9 @@ average American. By the time completely autonomous cars are even allowed on the
 
 completely autonomous cars beyond 2030. 
 
-	
 
-	Finally, the largest reason why autonomous cars won’t be common until after 2030 is policy. Currently, only four states and one place in Canada have laws regarding 
+
+Finally, the largest reason why autonomous cars won’t be common until after 2030 is policy. Currently, only four states and one place in Canada have laws regarding 
 
 autonomous cars, according to the study. The FAA currently limits commercial drone usage, including regulations making long distance usage nearly impossible. For instance, 
 
@@ -40,9 +40,9 @@ to keep their hands on the wheel always to engage Auto Pilot. Strict regulations
 
 autonomous cars will be slow and restrictive, pushing the availability of these cars out further than 2030. 
 
-	
 
-	Completely autonomous cars are predicted by the One Hundred Year study to be commonly available in a typical North American city by 2030, yet they don’t take consider
+
+Completely autonomous cars are predicted by the One Hundred Year study to be commonly available in a typical North American city by 2030, yet they don’t take consider
 
  outside factors. The study briefly mentions policy briefly, but doesn’t get into transportation policy as much as it should. Policy will hinder the timeline of autonomous cars
 
