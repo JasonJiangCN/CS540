@@ -8,10 +8,22 @@ class State {
     }
 
     public int getScore() {
-        int score = 0;
+        int count_1 = 0;
+        int count_2 = 0;
         // TO DO: return game theoretic value of the board
-
-        return score;
+        for (int i = 0; i < this.board.length; i++){
+            if (this.board[i] == '1')
+                count_1++;
+            else if(this.board[i] == '2')
+                count_2++;
+        }
+        if (count_1 == count_2)
+            return 0;
+        if (count_1 > count_2)
+            return 1;
+        if (count_1 < count_2)
+            return -1;
+        return -100;
     }
 
     public boolean isTerminal() {
@@ -21,7 +33,50 @@ class State {
             is_terminal = true;
         return is_terminal;
     }
+    private void isFurtherAction(char[] board, char enemy, int i, int j){
+        char arr[][] = new char[4][4];
+        char player;
+        if (enemy == '2')
+            player = '1';
+        else 
+            player = '2';
+        //construct a new board for faster accessing
+        for (int in = 0; in < 4; in++){
+            for(int jn = 0; jn < 4; jn++){
+                arr[in][jn] = board[0 + in*4 + jn];
+            }
+        }
+        int[][] neighbors = getNeighbors(arr, i, j, enemy, false);
+        for (int in = 0; in < neighbors[0][2]; in++){
 
+            //System.out.println("IM HERE"+in);
+            int en_i = neighbors[in][0];
+            int en_j = neighbors[in][1];
+            int offset_i = en_i - i;
+            int offset_j = en_j - j; 
+            //return null if exceed the boundary
+            if ((en_i + offset_i) < 0 
+                    || (en_i + offset_i) > 3  
+                    || (en_j + offset_j) < 0
+                    || (en_j + offset_j) > 3)
+                continue;
+            if (arr[en_i + offset_i][en_j + offset_j] == player){
+                board[en_i*4 + en_j] = player;
+            } else {
+                if ((en_i + offset_i + offset_i) < 0 
+                        || (en_i + offset_i + offset_i) > 3  
+                        || (en_j + offset_j + offset_j) < 0
+                        || (en_j + offset_j + offset_j) > 3)
+                    continue;
+                if (arr[en_i + offset_i + offset_i][en_j + offset_j + offset_j] 
+                        == player){
+                    board[(en_i + offset_i)*4+(en_j + offset_j)] = player;
+                        }
+            }
+
+        }
+        return;
+    }
     private int[][] getNeighbors(char[][] arr, int i, int j, char target, boolean reverse){
         int[][] ret = new int[8][3];
         char enemy = target;
@@ -134,6 +189,8 @@ class State {
             //
             newBoard[i*4+j] = player;
             newBoard[en_i*4+en_j] = player;
+
+            isFurtherAction(newBoard, enemy, i, j);
             State succ = new State(newBoard);
             return succ;
         } else {
@@ -146,6 +203,7 @@ class State {
                 newBoard[en_i*4+en_j] = player;
                 newBoard[(en_i + offset_i)*4 + (en_j + offset_j)] = player;
                 newBoard[i*4+j] = player;
+                isFurtherAction(newBoard, enemy, i, j);
                 State succ = new State(newBoard);
                 return succ;
             }
@@ -169,14 +227,20 @@ class State {
                 if (arr[i][j] == '0'){
                     int[][] enemyNeighbors = getNeighbors(arr, i, j, player, true);
                     for(int in = 0; in < enemyNeighbors[0][2]; in++){
-                        State successor = getSuccessorOfOneNode(arr,
+                        State successor1 = getSuccessorOfOneNode(arr,
                                 i,
                                 j, 
                                 enemyNeighbors[in][0], 
                                 enemyNeighbors[in][1],
                                 player);
-                        if (successor != null){
-                            succ.add(successor);
+                        if (successor1 != null){
+                            boolean isExist = false;
+                            for (int suc_in = 0; suc_in < succ.size(); suc_in++){
+                                if (succ.get(suc_in).equals(successor1) == true)
+                                    isExist = true;
+                            }
+                            if (!isExist)
+                                succ.add(successor1);
                         }
                     }
 
@@ -202,6 +266,17 @@ class State {
                     System.out.println(this.getBoard());
             }
         }
+        if (option == 2){
+            if (!this.isTerminal())
+                System.out.println("non-terminal");
+            else
+                System.out.println(this.getScore());
+
+        }
+        if (option == 3){
+            System.out.println(Minimax.run(this, player));
+            System.out.println(Minimax.counter);
+        }
     }
 
     public String getBoard() {
@@ -222,16 +297,70 @@ class State {
 }
 
 class Minimax {
+    static int counter;
+    /*
+       private static int max_value(State curr_state) {
+       counter++;
+       if (curr_state.isTerminal())
+       return curr_state.getScore();
+       else {
+       int a = -1000000;
+       State[] succ = curr_state.getSuccessors('1');
+       for (State success : succ){
+       a = Math.max(a, min_value(success));
+       }
+       return a;
+       }
+       }
+       */
     private static int max_value(State curr_state) {
-
-        // TO DO: implement Max-Value of the Minimax algorithm
-        return 0;
+        counter++;
+        int a = 0;
+        if (curr_state.isTerminal())
+            return curr_state.getScore();
+        else{
+            State[] successors = curr_state.getSuccessors('1');
+            a = Integer.MIN_VALUE;
+            if (successors.length == 0) {
+                return min_value(curr_state);
+            }
+            for(State successor : successors){
+                a = Math.max(a, min_value(successor));
+                //System.out.println(a);
+            }
+            return a;
+        }
     }
-
     private static int min_value(State curr_state) {
-
-        // TO DO: implement Min-Value of the Minimax algorithm
-        return 0;
+        /*
+           counter++;
+           if (curr_state.isTerminal())
+           return curr_state.getScore();
+           else {
+           int b = 1000000;
+           State[] succ = curr_state.getSuccessors('0');
+           for (State success : succ){
+           b = Math.max(b, max_value(success));
+           }
+           return b;
+           }*/
+        counter++;
+        int b = 0;
+        if (curr_state.isTerminal()){
+            //System.out.println(curr_state.getScore());
+            return curr_state.getScore();
+        }
+        else{
+            State[] successors = curr_state.getSuccessors('2');
+            b = Integer.MAX_VALUE;
+            if (successors.length == 0) {
+                return max_value(curr_state);
+            }
+            for(State successor : successors){
+                b = Math.min(b, max_value(successor));
+            }
+            return b;
+        }
     }
 
     private static int max_value_with_pruning(State curr_state, int alpha, int beta) {
@@ -247,9 +376,11 @@ class Minimax {
     }
 
     public static int run(State curr_state, char player) {
-
-        // TO DO: run the Minimax algorithm and return the game theoretic value
-        return 0;
+        counter = 0;
+        if (player == '1')
+            return max_value(curr_state);
+        else 
+            return min_value(curr_state);
     }
 
     public static int run_with_pruning(State curr_state, char player) {
