@@ -18,7 +18,7 @@ int main(){
 
         char* a = strtok(str, d);
         char* b = strtok(NULL, d);
-        printf("put(%s, %s);\n",a, b);
+        printf("put(%s, %s);",a, b);
     }
 
 
