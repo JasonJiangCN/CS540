@@ -5,9 +5,9 @@ int main(){
     char *d = malloc(4);
     *d  = ' '; 
     FILE* fp = fopen("data.txt", "r");
-    char str[10];
+    char str[20];
 
-    while (fgets(str, 10, fp) != NULL){
+    while (fgets(str, 20, fp) != NULL){
         if (str[8] == '\n');
         str[8] = '\0';
         if (str[9] == '\n');
