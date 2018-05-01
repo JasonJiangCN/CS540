@@ -187,7 +187,22 @@ public class Neural {
                     double err = get_error(eval,w);
                     System.out.printf("%.5f\n",err);
                 }
+                return;
             }
+            double T = Integer.valueOf(args[11]);
+            if (option == 7){
+                for( int j = 0; j<T; j++){
+                    for( int i = 0; i<train.size(); i++){
+                        double[] temp = train.get(i);
+                        double[] pd_w = get_weight(temp[0], temp[1], temp[2], w);
+                        update_w_by_SGD(w, pd_w, n);
+                    }
+                    print(w);
+                    double err = get_error(eval,w);
+                    System.out.printf("%.5f\n",err);
+
+                }
+            }    
 
         }
 
