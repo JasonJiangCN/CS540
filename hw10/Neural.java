@@ -90,6 +90,21 @@ public class Neural {
 
         return arr;
     }
+    private static double get_accur(ArrayList<double[]> arr, double[] w){
+        int num_accur = 0;
+        for (double[] v : arr){
+            double v_C = getUV(w, v[0], v[1])[5];
+            int temp;
+            if (v_C >= 0.5)
+                temp = 1;
+            else 
+                temp = 0;
+            if (temp == v[2])
+                num_accur++;
+        }
+        double ret = (double)num_accur / arr.size();
+        return ret;
+    }
     public static void main(String[] args){
 
         double w[];
@@ -200,9 +215,35 @@ public class Neural {
                     print(w);
                     double err = get_error(eval,w);
                     System.out.printf("%.5f\n",err);
-
                 }
-            }    
+                return;
+            }
+            if (option == 8){
+                double prev = 99999;
+                double err = 0;
+                int j = 1;
+                for (j = 1; j <= T; j++){
+                    for( int i = 0; i<train.size(); i++){
+                        double[] temp = train.get(i);
+                        double[] pd_w = get_weight(temp[0], temp[1], temp[2], w);
+                        update_w_by_SGD(w, pd_w, n);
+                    }
+                    err = get_error(eval,w);
+                    if (err < prev)
+                        prev = err;
+                    else
+                        break;
+                }
+                if (j == T+1)
+                    j -= 1;
+                System.out.println(j);
+                print(w);
+                System.out.printf("%.5f\n",err);
+                ArrayList<double[]> test = file_to_array("hw2_midterm_A_test.txt");
+                double pred = get_accur(test, w);
+                System.out.printf("%.5f\n",pred);
+
+            }
 
         }
 
